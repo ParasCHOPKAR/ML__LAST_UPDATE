@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Meghrup Linen and Décor</title>
+    <link rel="icon" type="image/png" href="images/favicon_2.jpg" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -232,27 +233,34 @@
         color: #a67c52;
       }
     }
+
+
+
+
   </style>
 </head>
 <body>
   <!-- Top Bar -->
-  <div class="top-bar">
+  <!-- <div class="top-bar">
     <div class="left">
    <div>
   📞 <a href="tel:+919146428456">+91 9146428456</a> / <a href="tel:+919619293734">+91 9619293734</a>
-  &nbsp;&nbsp;📍 Ground Floor, Plot No.27, Arun Villa, Sidram Mala, Gat no.1804, Lambodar Park, Loni Kalbhor, Pune-412201, Maharashtra, India
+  &nbsp;&nbsp;📍  Pune-412308, Maharashtra, India
 </div>
 
     </div>
-  </div>
+  </div> -->
 
   <!-- Header -->
 <!-- Header -->
 <header class="main-header">
   <div class="container">
-    <div class="logo">
-      Meghrup Linen<br><span class="sub">And Décor</span>
-    </div>
+<a href="index.html" style="text-decoration: none; color: inherit;">
+  <div class="logo">
+    Meghrup Linen<br><span class="sub">And Décor</span>
+  </div>
+</a>
+
 
     <!-- Mobile Toggle Button -->
     <button class="sidebar-toggle" onclick="toggleSidebarMobile()">
@@ -291,17 +299,17 @@
         </li>
         <li>
           <a href="DUETS_&_PROTECTORS.html">DUETS & PROTECTORS</a><i class="fa-solid fa-chevron-down icon"></i>
-          <div class="dropdown-content">
-            <a href="PILLOWS_&_CUSHIONS.html">Duet / Comforter - Single</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Duet / Comforter - Double</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Duet Cover - White Stripes</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Cotton Duet Cover 210 TC</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Cotton Duet Cover 300 TC</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Cotton Duet Cover 400 TC</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Colour Cotton Duet Cover</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Mattress Protector - Single</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Mattress Protector - Double</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Pillow Protector</a>
+       <div class="dropdown-content">
+            <a href="DUETS_&_PROTECTORS.html">Duet / Comforter - Single</a>
+            <a href="DUETS_&_PROTECTORS.html">Duet / Comforter - Double</a>
+            <a href="DUETS_&_PROTECTORS.html">Duet Cover - White Stripes</a>
+            <a href="DUETS_&_PROTECTORS.html">Cotton Duet Cover 210 TC</a>
+            <a href="DUETS_&_PROTECTORS.html">Cotton Duet Cover 300 TC</a>
+            <a href="DUETS_&_PROTECTORS.html">Cotton Duet Cover 400 TC</a>
+            <a href="DUETS_&_PROTECTORS.html">Colour Cotton Duet Cover</a>
+            <a href="DUETS_&_PROTECTORS.html">Mattress Protector - Single</a>
+            <a href="DUETS_&_PROTECTORS.html">Mattress Protector - Double</a>
+            <a href="DUETS_&_PROTECTORS.html">Pillow Protector</a>
           </div>
         </li>
         <li>
@@ -492,11 +500,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Inter', sans-serif;
@@ -523,14 +527,8 @@
     }
 
     @keyframes floatIn {
-      0% {
-        transform: rotateX(90deg);
-        opacity: 0;
-      }
-      100% {
-        transform: rotateX(0deg);
-        opacity: 1;
-      }
+      0% { transform: rotateX(90deg); opacity: 0; }
+      100% { transform: rotateX(0deg); opacity: 1; }
     }
 
     .contact-wrapper {
@@ -544,24 +542,16 @@
       flex-wrap: wrap;
       gap: 40px;
       justify-content: space-between;
-      transform-style: preserve-3d;
       animation: popUp 0.9s ease-in-out;
     }
 
     @keyframes popUp {
-      0% {
-        transform: scale(0.95) rotateY(10deg);
-        opacity: 0;
-      }
-      100% {
-        transform: scale(1) rotateY(0deg);
-        opacity: 1;
-      }
+      0% { transform: scale(0.95) rotateY(10deg); opacity: 0; }
+      100% { transform: scale(1) rotateY(0deg); opacity: 1; }
     }
 
     .contact-info, .contact-form {
       flex: 1 1 300px;
-      transform: perspective(1000px);
     }
 
     .contact-info h2, .contact-form h2 {
@@ -570,11 +560,7 @@
       margin-bottom: 20px;
     }
 
-    .contact-info p {
-      margin-bottom: 16px;
-      font-size: 15px;
-      line-height: 1.6;
-    }
+    .contact-info p { margin-bottom: 16px; font-size: 15px; line-height: 1.6; }
 
     .contact-info i {
       color: #a67c52;
@@ -608,11 +594,7 @@
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+    form { display: flex; flex-direction: column; gap: 20px; }
 
     .form-group {
       position: relative;
@@ -667,7 +649,6 @@
       font-weight: 600;
       cursor: pointer;
       transition: all 0.4s ease;
-      transform: perspective(600px);
     }
 
     form button:hover {
@@ -678,31 +659,7 @@
     .map-container {
       width: 100%;
       height: 500px;
-      position: relative;
       margin-top: 60px;
-    }
-
-    .map-container iframe {
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    .map-marker {
-      position: absolute;
-      top: 49.5%;
-      left: 50.1%;
-      transform: translate(-50%, -50%);
-      z-index: 10;
-    }
-
-    .map-marker div {
-      width: 20px;
-      height: 20px;
-      background-color: red;
-      border-radius: 50%;
-      animation: ping 1.5s infinite;
-      box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
     }
 
     .whatsapp-float {
@@ -725,26 +682,37 @@
       transform: scale(1.2) rotate(10deg);
     }
 
-    @keyframes ping {
-      0% { transform: scale(1); opacity: 1; }
-      70% { transform: scale(2.5); opacity: 0; }
-      100% { transform: scale(1); opacity: 0; }
-    }
-
     @keyframes popup {
       0%, 100% { transform: scale(1); opacity: 1; }
       50% { transform: scale(1.2); opacity: 0.8; }
     }
 
     @media (max-width: 768px) {
-      .contact-heading h1 {
-        font-size: 30px;
-      }
+      .contact-heading h1 { font-size: 30px; }
       .contact-wrapper {
         padding: 30px 20px;
         flex-direction: column;
       }
     }
+    .map-container {
+  width: 100%;
+  max-width: 100%;
+  height: 500px;
+  padding: 0;
+  margin: 60px auto 0;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
   </style>
 </head>
 
@@ -760,53 +728,59 @@
     <!-- Info -->
     <div class="contact-info">
       <h2>📬 Contact Information</h2>
-      <p><i class="fas fa-map-marker-alt"></i><strong> Address:</strong>Ground Floor, Plot No.27, Arun Villa, Sidram Mala, Gat no.1804, Lambodar Park, Loni Kalbhor, Pune-412201, Maharashtra, India</p>
-<p>
-  <i class="fas fa-phone"></i><strong> Phone:</strong> 
-  <a href="tel:+919146428456" style="text-decoration: none; color: inherit;">+91 91464 28456</a> / 
-  <a href="tel:+919619293734" style="text-decoration: none; color: inherit;">+91 96192 93734</a>
-</p>
-
-      <p><i class="fas fa-envelope"></i><strong> Email:</strong> MLdecor0051@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i><strong> Address:</strong>  Ganesh Nagar, Saswad Road,
+Near Railway Flyover Bridge,
+Fursungi, Pune 412308</p>
+      <p><i class="fas fa-phone"></i><strong> Phone:</strong> 
+        <a href="tel:+919146428456" style="text-decoration: none; color: inherit;">+91 91464 28456</a> / 
+        <a href="tel:+919619293734" style="text-decoration: none; color: inherit;">+91 96192 93734</a>
+      </p>
+      <p><i class="fas fa-envelope"></i><strong> Email:</strong> meghruplinen@gmail.com</p>
       <div class="social-icons">
-        <a href="https://www.facebook.com/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/9146428456" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/people/Meghrup-Linen-Decor/61550862792869/?mibextid=LQQJ4d&rdid=C3fUnIgBhQmAQfzE&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16iMsrMCgv%2F%3Fmibextid%3DLQQJ4d" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/meghrup_linendecor/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/9146428456?text=Hello%2C%20I%20am%20interested%20in%20your%20Products." class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
       </div>
     </div>
 
     <!-- Form -->
-   <div class="contact-form" id="contact-form">
-
+    <div class="contact-form" id="contact-form">
       <h2>💬 Send Us a Message</h2>
-      <form onsubmit="submitForm(event)">
+      <form action="https://formspree.io/f/xovwzgng" method="POST">
         <div class="form-group">
-          <input type="text" id="name" placeholder=" " required>
-          <label for="name">Your Name</label>
-        </div>
-  <div class="form-group">
-  <input type="text" id="subject" placeholder=" " required>
-  <label for="subject">Your Subject</label>
-</div>
-
-        <div class="form-group">
-          <input type="text" id="mobile" placeholder=" " required>
-          <label for="mobile">Mobile Number</label>
+          <input type="text" name="name" placeholder=" " required>
+          <label>Your Name</label>
         </div>
         <div class="form-group">
-          <textarea id="message" placeholder=" " required></textarea>
-          <label for="message">Your Message</label>
+          <input type="text" name="subject" placeholder=" " required>
+          <label>Your Subject</label>
+        </div>
+        <div class="form-group">
+          <input type="text" name="mobile" placeholder=" " required>
+          <label>Mobile Number</label>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder=" " required></textarea>
+          <label>Your Message</label>
         </div>
         <button type="submit">✉️ SEND MESSAGE</button>
       </form>
     </div>
   </div>
 
+ <!-- CONTINUATION OF THE PREVIOUS CODE -->
+
   <!-- Google Map -->
-  <div class="map-container">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1891.947190178764!2d73.7881!3d18.4839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1718379000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div class="map-marker"><div></div></div>
-  </div>
+<!-- Google Map -->
+<div class="map-container">
+  <iframe
+    src="https://www.google.com/maps?q=18.469515,73.96039&hl=en&z=17&output=embed"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
 
   <!-- WhatsApp Floating Button -->
   <div class="whatsapp-float">
@@ -815,190 +789,109 @@
     </a>
   </div>
 
-  <!-- JS -->
-  <script>
-    function submitForm(e) {
-      e.preventDefault();
-      alert("Thanks for contacting us! We'll get back to you shortly.");
-    }
-  </script>
-
-
-
-
-
-<!-- //////////////////////////////////////////////   CONTACT US PAGE END  //////////////////////////////////////// -->
- 
-<!-- //////////////////////////////////////////////   CONTACT US PAGE END  //////////////////////////////////////// -->
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- WhatsApp Floating Button with Pulse Animation -->
-<div style="
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  z-index: 1000;
-  animation: popup 1.5s ease-in-out infinite;
-">
-  <a href="https://wa.me/9146428456?text=Hello%2C%20I%20am%20interested%20in%20your%20services." 
-     target="_blank" 
-     title="Chat on WhatsApp">
-    <img src="images/Whatsapp.png" 
-         alt="WhatsApp" 
-         style="
-           width: 60px;
-           height: 60px;
-           border-radius: 50%;
-           box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-           transition: transform 0.3s ease;
-        " 
-        onmouseover="this.style.transform='scale(1.2)'" 
-        onmouseout="this.style.transform='scale(1)'">
-  </a>
-</div>
-
-<style>
-  @keyframes popup {
-    0%, 100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-    50% {
-      transform: scale(1.2);
-      opacity: 0.8;
-    }
-  }
-</style>
-
-
-<!-- Include GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-<!-- Footer Section -->
-<!-- <div style="background: linear-gradient(135deg, #000000, #222222, #000000);padding: 40px 20px; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden;"> -->
+  <!-- Footer Section -->
   <div style="background: linear-gradient(135deg, #3e1f0d, #8b5e3c, #3e1f0d); padding: 40px 20px; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden;">
+    <!-- Background pattern -->
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('https://www.transparenttextures.com/patterns/hexellence.png'); opacity: 0.05; background-size: 200px; z-index: 0;"></div>
 
+    <!-- Footer Content -->
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; position: relative; z-index: 1; max-width: 1200px; margin: 0 auto;">
+      <!-- Column 1 - Logo & About -->
+      <div style="flex: 1 1 250px; padding: 10px;">
+        <div style="font-size: 24px; font-weight: 700; color: #fff; line-height: 1.2; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+          Meghrup Linen<br>
+          <span style="font-size: 18px; font-weight: 500; color: #f8e4db;">And Décor</span>
+        </div>
+        <p style="color: whitesmoke; font-size: 14px; line-height: 1.6; margin-top: 10px;">
+          Meghrup Linen & Décor offers premium hotel and home linen with unmatched softness,
+        </p>
+        <p style="color: whitesmoke; font-size: 14px;">
+          durability, and style.
+        </p>
+      </div>
 
-  <!-- Background pattern -->
-  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('https://www.transparenttextures.com/patterns/hexellence.png'); opacity: 0.05; background-size: 200px; z-index: 0;"></div>
+      <!-- Column 2 - Help & Info -->
+      <div style="flex: 1 1 200px; padding: 10px;">
+        <h3 style="margin-bottom: 10px; font-size: 18px; font-weight: 600; color: #fff;">Help & Information</h3>
+        <ul style="list-style: disc; padding-left: 20px; color: whitesmoke; font-size: 15px;">
+          <li><a href="#" style="text-decoration: none; color: whitesmoke;">FAQ</a></li>
+          <li><a href="#" style="text-decoration: none; color: whitesmoke;">Shipping & Delivery Policy</a></li>
+          <li><a href="#" style="text-decoration: none; color: whitesmoke;">Return & Refund Policy</a></li>
+          <li><a href="#" style="text-decoration: none; color: whitesmoke;">Terms & Conditions</a></li>
+          <li><a href="#" style="text-decoration: none; color: whitesmoke;">Privacy Policy</a></li>
+        </ul>
+      </div>
 
-  <!-- Footer Content -->
-  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; position: relative; z-index: 1; max-width: 1200px; margin: 0 auto;">
+      <!-- Column 3 - Quick Links -->
+      <div style="flex: 1 1 180px; padding: 10px;">
+        <h3 style="margin-bottom: 10px; font-size: 18px; font-weight: 600; color: #fff;">Quick Links</h3>
+        <ul style="list-style: none; padding-left: 0; font-size: 15px; line-height: 1.6;">
+          <li><a href="index.html" style="color: whitesmoke; text-decoration: none;">HOME</a></li>
+          <li><a href="Bed_linens.html" style="color: whitesmoke; text-decoration: none;">BED LINENS</a></li>
+          <li><a href="PILLOWS_&_CUSHIONS.html" style="color: whitesmoke; text-decoration: none;">PILLOWS & CUSHIONS</a></li>
+          <li><a href="DUETS_&_PROTECTORS.html" style="color: whitesmoke; text-decoration: none;">DUETS & PROTECTORS</a></li>
+          <li><a href="TOWELS_&_MATS.html" style="color: whitesmoke; text-decoration: none;">TOWELS & MATS</a></li>
+          <li><a href="OTHERS.html" style="color: whitesmoke; text-decoration: none;">OTHERS</a></li>
+          <li><a href="Aboutus.html" style="color: whitesmoke; text-decoration: none;">ABOUT US</a></li>
+          <li><a href="contact.html" style="color: whitesmoke; text-decoration: none;">CONTACT US</a></li>
+        </ul>
+      </div>
 
-    <!-- Column 1 - Logo & About -->
-    <div style="flex: 1 1 250px; padding: 10px;">
-  <div style="font-size: 24px; font-weight: 700; color: #fff; line-height: 1.2; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
-    Meghrup Linen<br>
-    <span style="font-size: 18px; font-weight: 500; color: #f8e4db;">And Décor</span>
-  </div>
-  <p style="color: whitesmoke; font-size: 14px; line-height: 1.6; margin-top: 10px;">
-   Meghrup Linen & Décor offers premium hotel and home linen with unmatched softness,
-  <p style="color: whitesmoke; font-size: 14px;">
-    durability, and style.
-  </p>
-  </p>
-</div>
+      <!-- Column 4 - Contact Info -->
+      <div style="flex: 1 1 250px; padding: 10px;">
+        <h3 style="margin-bottom: 10px; font-size: 18px; font-weight: 600; color: #fff;">Contact Info</h3>
+        <ul style="list-style: none; padding-left: 0; font-size: 15px; color: whitesmoke; line-height: 1.8;">
+          <li>
+            <i class="fa-solid fa-phone" style="margin-right: 8px;"></i>
+            <a href="tel:+919146428456" style="text-decoration: none; color: whitesmoke;">+91 9146428456</a> /
+            <a href="tel:+919619293734" style="text-decoration: none; color: whitesmoke;">+91 9619293734</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>
+            <a href="mailto:meghruplinen@gmail.com" style="text-decoration: none; color: whitesmoke;">meghruplinen@gmail.com</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i>
+      <span style="color: whitesmoke;">
+    Ganesh Nagar, Saswad Road,<br>
+    Near Railway Flyover Bridge,<br>
+    Fursungi, Pune 412308
+  </span>
 
-    <!-- Column 2 - Help & Info -->
-    <div style="flex: 1 1 200px; padding: 10px;">
-      <h3 style="margin-bottom: 10px; font-size: 18px; font-weight: 600; color: #fff;">Help & Information</h3>
-      <ul style="list-style: disc; padding-left: 20px; color: whitesmoke; font-size: 15px;">
-        <li><a href="#" style="text-decoration: none; color: whitesmoke;">FAQ</a></li>
-        <li><a href="#" style="text-decoration: none; color: whitesmoke;">Shipping & Delivery Policy</a></li>
-        <li><a href="#" style="text-decoration: none; color: whitesmoke;">Return & Refund Policy</a></li>
-        <li><a href="#" style="text-decoration: none; color: whitesmoke;">Terms & Conditions</a></li>
-        <li><a href="#" style="text-decoration: none; color: whitesmoke;">Privacy Policy</a></li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Column 3 - Quick Links -->
-   <div style="flex: 1 1 180px; padding: 10px;">
-  <h3 style="margin-bottom: 10px; font-size: 18px; font-weight: 600; color: #fff;">Quick Links</h3>
-  <ul style="list-style: none; padding-left: 0; font-size: 15px; line-height: 1.6;">
-    <li><a href="index.html" style="color: whitesmoke; text-decoration: none;">HOME</a></li>
-    <li><a href="Bed_linens.html" style="color: whitesmoke; text-decoration: none;">BED LINENS</a></li>
-    <li><a href="PILLOWS_&_CUSHIONS.html" style="color: whitesmoke; text-decoration: none;">PILLOWS & CUSHIONS</a></li>
-    <li><a href="DUETS_&_PROTECTORS.html" style="color: whitesmoke; text-decoration: none;">DUETS & PROTECTORS</a></li>
-    <li><a href="TOWELS_&_MATS.html" style="color: whitesmoke; text-decoration: none;">TOWELS & MATS</a></li>
-    <li><a href="OTHERS.html" style="color: whitesmoke; text-decoration: none;">OTHERS</a></li>
-    <li><a href="Aboutus.html" style="color: whitesmoke; text-decoration: none;">ABOUT US</a></li>
-    <li><a href="contact.html" style="color: whitesmoke; text-decoration: none;">CONTACT US</a></li>
-  </ul>
-</div>
+    <!-- Social Icons -->
+    <div style="text-align: center; margin-top: 20px; z-index: 1; position: relative;">
+      <a href="https://www.facebook.com/people/Meghrup-Linen-Decor/61550862792869/?mibextid=LQQJ4d&rdid=C3fUnIgBhQmAQfzE&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F16iMsrMCgv%2F%3Fmibextid%3DLQQJ4d" target="_blank" style="margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/meghrup_linendecor/" target="_blank" style="margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram"></a>
+      <a href="https://wa.me/9146428456?text=Hello%2C%20I%20am%20interested%20in%20your%20Products." target="_blank" style="margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp"></a>
+    </div>
 
-
-    <!-- Column 4 - Contact Info -->
-    <div style="flex: 1 1 250px; padding: 10px;">
-  <h3 style="margin-bottom: 10px; font-size: 18px; font-weight: 600; color: #fff;">Contact Info</h3>
-  <ul style="list-style: none; padding-left: 0; font-size: 15px; color: whitesmoke; line-height: 1.8;">
-     <li>
-  <i class="fa-solid fa-phone" style="margin-right: 8px;"></i>
-  <a href="tel:+919146428456" style="text-decoration: none; color: whitesmoke;">+91 9146428456</a> /
-  <a href="tel:+919619293734" style="text-decoration: none; color: whitesmoke;">+91 9619293734</a>
-</li>
-    <li>
-      <i class="fa-solid fa-envelope" style="margin-right: 8px;"></i>
-      <a href="mailto:comficotton@gmail.com" style="text-decoration: none; color: whitesmoke;">comficotton@gmail.com</a>
-    </li>
-    <li>
-      <i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i>
-      <span style="color: whitesmoke;">Ground Floor, Plot No.27, Arun Villa, Sidram Mala, Gat no.1804, Lambodar Park, Loni Kalbhor, Pune-412201, Maharashtra, India</span>
-    </li>
-  </ul>
-</div>
-
+    <!-- Copyright -->
+    <div style="text-align: center; margin-top: 25px; font-size: 14px; color: #fff; z-index: 1; position: relative;">
+    © 2025 Meghrup Linen & Décor. All rights reserved.
+      <div style="margin-top: 5px;">Developed By DW INNOVATION PVT. LTD.</div>
+    </div>
   </div>
 
-  <!-- Social Icons -->
-  <div style="text-align: center; margin-top: 20px; z-index: 1; position: relative;">
-    <a href="https://facebook.com" target="_blank" style="margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook"></a>
-    <a href="https://instagram.com" target="_blank" style="margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram"></a>
-    <a href="https://wa.me/919146428456" target="_blank" style="margin: 0 10px;"><img src="https://cdn-icons-png.flaticon.com/24/733/733585.png" alt="WhatsApp"></a>
-  </div>
-
-  <!-- Copyright -->
-<div style="text-align: center; margin-top: 25px; font-size: 14px; color: #fff; z-index: 1; position: relative;">
-  © Living Mode 2019. All Rights Reserved.
-  <div style="margin-top: 5px;">Developed By DW INNOVATION PVT. LTD.</div>
-</div>
-
-</div>
-
-<!-- Font Awesome for icons -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
-
-
-<script>
-  // Fill "Your Subject" from URL if present
-  window.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const subject = urlParams.get('subject');
-    if (subject) {
-      const subjectInput = document.getElementById('subject');
-      if (subjectInput) {
-        subjectInput.value = subject;
-        subjectInput.dispatchEvent(new Event('input')); // trigger label animation
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const product = urlParams.get('product');
+      if (product) {
+        const subjectField = document.querySelector('input[name="subject"]');
+        if (subjectField) subjectField.value = `Enquiry about ${product}`;
       }
-    }
-  });
-</script>
-
+    });
+  </script>
 
 </body>
 </html>
-
-
-
-
 
 
