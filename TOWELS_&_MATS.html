@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Meghrup Linen and Décor</title>
-    <link rel="icon" type="image/png" href="images/favicon_2.jpg" />
+    <link rel="icon" type="image/png" href="images/Meghrup abstract.png"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -42,14 +42,14 @@
       0% { transform: translateX(0); }
       100% { transform: translateX(-100%); }
     }
+header.main-header {
+  background: linear-gradient(135deg, #fffefc, #fdf5ee, #f7e9dc);
+  padding: 12px 20px;
+  position: relative;
+  z-index: 1000;
+}
 
-    header.main-header {
-      background: linear-gradient(135deg, #fffefc, #fdf5ee, #f7e9dc);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-      padding: 12px 20px;
-      position: relative;
-      z-index: 1000;
-    }
+
 
     .main-header .container {
       display: flex;
@@ -57,21 +57,36 @@
       align-items: center;
     }
 
-    .logo {
-      font-size: 26px;
-      font-weight: 700;
-      color: #a67c52;
-      text-transform: uppercase;
-      line-height: 1.2;
-      text-shadow: 1px 1px 0 #d1bfa6, 2px 2px 0 #c2a988;
-    }
+.logo img {
+  height: 70px;
+  width: 200px;
+  object-fit: contain;
+  transition: all 0.4s ease-in-out;
+  filter:
+    drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4))    /* Thicker black shadow */
+    drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)); /* Stronger white glow */
+  border-radius: 10px;
+  opacity: 0.85; /* Reduced opacity */
+}
 
-    .logo .sub {
-      font-size: 16px;
-      font-weight: 600;
-      color: #7d5a3c;
-      text-shadow: 1px 1px 0 #e0d1bc, 2px 2px 0 #d6c0a5;
-    }
+/* Glow on hover */
+.logo img:hover {
+  transform: scale(1.05);
+  filter:
+    drop-shadow(0 8px 16px rgba(0, 0, 0, 0.5))    /* Even thicker black shadow */
+    drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)); /* Stronger white glow */
+  opacity: 1; /* Full opacity on hover */
+}
+
+@media (max-width: 992px) {
+  .logo img {
+  height: 60px !important;
+    width: 190px !important;
+  }
+}
+
+
+
 
     nav.nav-menu {
       display: none;
@@ -256,9 +271,10 @@
 <header class="main-header">
   <div class="container">
 <a href="index.html" style="text-decoration: none; color: inherit;">
-  <div class="logo">
-    Meghrup Linen<br><span class="sub">And Décor</span>
-  </div>
+<div class="logo">
+ <img src="images/FINAL_CROP_LOGO.png" alt="Meghrup Linen and Décor" style="height: 70px;width: 200px;" />
+</div>
+
 </a>
 
 
@@ -291,10 +307,7 @@
             <a href="PILLOWS_&_CUSHIONS.html">Cotton Stripes 300 TC - 20x30</a>
             <a href="PILLOWS_&_CUSHIONS.html">Cotton Stripes 400 TC - 20x30</a>
             <strong style="padding:8px 20px;color:#a67c52;">Pillows & Cushions</strong>
-            <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 16x24</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 17x27</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 22x32</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Recron Cushion 16x16</a>
+
           </div>
         </li>
         <li>
@@ -353,7 +366,8 @@
   <!-- Sidebar for Mobile -->
 <div class="mobile-sidebar" id="mobileSidebar">
   <div class="close-btn" onclick="toggleSidebarMobile()">×</div>
-  <h3 style="color:#a67c52; margin-bottom: 20px;">Meghrup Menu</h3>
+
+ <img src="images/FINAL_CROP_LOGO.png" alt="Meghrup Logo" style="max-width: 140px; margin-bottom: 40px;">
   <ul>
     <li>
       <a href="Bed_linens.html" onclick="toggleDropdownMobile('drop1', event)">Bed Linens <i class="fa fa-chevron-down"></i></a>
@@ -377,10 +391,7 @@
         <a href="PILLOWS_&_CUSHIONS.html">Cotton Stripes 300 TC - 20x30</a>
         <a href="PILLOWS_&_CUSHIONS.html">Cotton Stripes 400 TC - 20x30</a>
         <strong style="color:#a67c52;">Pillows & Cushions</strong>
-        <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 16x24</a>
-        <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 17x27</a>
-        <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 22x32</a>
-        <a href="PILLOWS_&_CUSHIONS.html">Recron Cushion 16x16</a>
+       
       </div>
     </li>
 
@@ -489,8 +500,6 @@
 
 
 
-
-
 <!-- //////////////////////////////////////////////  ABOUT US PAGE START  //////////////////////////////////////// -->
  
 <!-- ////////////////////////////////////////////// ABOUT US PAGE START  //////////////////////////////////////// -->
@@ -511,67 +520,158 @@
     </h2>
 
     <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-bottom: 50px;">
-
+      
       <!-- Card 1 -->
       <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
-        <img src="images/BATH_01.jpeg" alt="Bath Towel - Regular" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Bath Towel - Regular</h3>
+        <img src="images/BATH_TOWEL_01.webp" alt="Bath Towel - Regular" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;"> Hotel Bath Towel Terry Cotton - White - 600 GMS - Classic Series</h3>
         <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-        <button onclick="redirectToContact('Bath Towel - Regular')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+        <button onclick="redirectToContact(' Hotel Bath Towel Terry Cotton - White - 600 GMS - Classic Series')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
           Enquire Now
         </button>
       </div>
 
       <!-- Card 2 -->
       <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
-        <img src="images/BATH_02.jpeg" alt="Bath Towel - 500 gm" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Bath Towel - 500 gm</h3>
+        <img src="images/BATH_TOWEL_02.webp" alt="Bath Towel - 500 gm" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;"> Bath Towel - Regular Series - 80% Cotton 20% Polyester - White</h3>
         <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-        <button onclick="redirectToContact('Bath Towel - 500 gm')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+        <button onclick="redirectToContact(' Bath Towel - Regular Series - 80% Cotton 20% Polyester - White')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
           Enquire Now
         </button>
       </div>
 
       <!-- Card 3 -->
       <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
-        <img src="images/BATH_03.jpeg" alt="Bath Towel - 550 gm" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Bath Towel - 550 gm</h3>
+        <img src="images/BATH_TOWEL_03.webp" alt="Bath Towel - 550 gm" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;"> Terry Bath Towel Divine Series - White | High Quality 100%  Cotton</h3>
         <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-        <button onclick="redirectToContact('Bath Towel - 550 gm')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+        <button onclick="redirectToContact(' Terry Bath Towel Divine Series - White | High Quality 100% Combed Cotton')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
           Enquire Now
         </button>
       </div>
 
       <!-- Card 4 -->
       <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
-        <img src="images/BATH_04.jpeg" alt="Bath Towel - 600 gm" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Bath Towel - 600 gm</h3>
+        <img src="images/BATH_TOWEL_04.webp" alt="Bath Towel - 600 gm" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;"> Bath Towel - Regular Series - 80% Cotton 20% Polyester - Grey</h3>
         <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-        <button onclick="redirectToContact('Bath Towel - 600 gm')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+        <button onclick="redirectToContact(' Bath Towel - Regular Series - 80% Cotton 20% Polyester - Grey')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
           Enquire Now
         </button>
       </div>
 
       <!-- Card 5 -->
       <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
-        <img src="images/BATH_05.jpeg" alt="Pure Cotton Bath Towel (30x60)" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Pure Cotton Bath Towel </h3>
+        <img src="images/BATH_TOWEL_05.webp" alt="Pure Cotton Bath Towel (30x60)" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;"> Bath Towel - Regular Series - 80% Cotton 20% Polyester - Beige</h3>
         <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-        <button onclick="redirectToContact('Pure Cotton Bath Towel (30x60)')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+        <button onclick="redirectToContact(' Bath Towel - Regular Series - 80% Cotton 20% Polyester - Beige')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
           Enquire Now
         </button>
       </div>
 
       <!-- Card 6 -->
       <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
-        <img src="images/HAND_01.jpeg" alt="Hand Towel" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Hand Towel</h3>
+        <img src="images/BATH_TOWEL_06.webp" alt="Hand Towel" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;"> Bath Towel - Regular Series - 80% Cotton 20% Polyester - Brown</h3>
         <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-        <button onclick="redirectToContact('Hand Towel')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+        <button onclick="redirectToContact(' Bath Towel - Regular Series - 80% Cotton 20% Polyester - Brown')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
           Enquire Now
         </button>
       </div>
 
+      <!-- Card 7 -->
+      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+        <img src="images/BATH_TOWEL_07.webp" alt="Bath Mat - White" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;"> Bath Towel - Regular Series - 80% Cotton 20% Polyester - Wine
+</h3>
+        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
+        <button onclick="redirectToContact(' Bath Towel - Regular Series - 80% Cotton 20% Polyester - Wine')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+          Enquire Now
+        </button>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+        <img src="images/BATH_TOWEL_08.webp" alt="Bath Mat - Colour" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Spa Bath Towel - Divine Series - Grey - 100% Cotton, 630 GSM,</h3>
+        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
+        <button onclick="redirectToContact(' Spa Bath Towel - Divine Series - Grey - 100% Cotton, 630 GSM, 30x60 Inches')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+          Enquire Now
+        </button>
+      </div>
+
+      <!-- Card 1 -->
+      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+        <img src="images/Hand Towel.webp" alt="Bath Towel - Regular" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Terry Cotton Hand Towel - Classic - White</h3>
+        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
+        <button onclick="redirectToContact('Terry Cotton Hand Towel - Classic - White')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+          Enquire Now
+        </button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+        <img src="images/HAND_TOWEL_01.webp" alt="Bath Towel - 500 gm" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Terry Hand Towel High Quality 100% Combed Cotton - Divine - White</h3>
+        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
+        <button onclick="redirectToContact(' Terry Hand Towel High Quality 100% Combed Cotton - Divine - White')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+          Enquire Now
+        </button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+        <img src="images/Hand Towel_02.webp" alt="Bath Towel - 550 gm" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Terry Hand Towel Regular Series - 80% Cotton 20% Polyester - White</h3>
+        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
+        <button onclick="redirectToContact('Terry Hand Towel Regular Series - 80% Cotton 20% Polyester - White')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+          Enquire Now
+        </button>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+        <img src="images/Hand Towel_04.webp" alt="Bath Towel - 600 gm" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Hand Towel - Regular Series - 80% Cotton 20% Polyester - Grey</h3>
+        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
+        <button onclick="redirectToContact('Hand Towel - Regular Series - 80% Cotton 20% Polyester - Grey')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+          Enquire Now
+        </button>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+        <img src="images/Hand Towel_05.webp" alt="Pure Cotton Bath Towel (30x60)" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;"> Hand Towel - Regular Series - 80% Cotton 20% Polyester - Brown</h3>
+        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
+        <button onclick="redirectToContact(' Hand Towel - Regular Series - 80% Cotton 20% Polyester - Brown')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+          Enquire Now
+        </button>
+      </div>
+
+
+     <!-- Card 8 -->
+      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+        <img src="images/POOL_TOWEL_02.webp" alt="Bath Mat - Colour" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Oversized Towels / Bath Sheets / Pool Cabana Blue - Stripe</h3>
+        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
+        <button onclick="redirectToContact('Oversized Towels / Bath Sheets / Pool Cabana Blue - Stripe')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+          Enquire Now
+        </button>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
+        <img src="images/POOL_TOWEL.jpeg" alt="Pool Towel" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Oversized Towels / Bath Sheets / Pool Cabana Blue - Stripe</h3>
+        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
+        <button onclick="redirectToContact('Oversized Towels / Bath Sheets / Pool Cabana Blue - Stripe')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
+          Enquire Now
+        </button>
+      </div>
       <!-- Card 7 -->
       <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
         <img src="images/BATH_MAT_WHITE.jpeg" alt="Bath Mat - White" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
@@ -592,15 +692,7 @@
         </button>
       </div>
 
-      <!-- Card 9 -->
-      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); transition: transform 0.3s ease;">
-        <img src="images/POOL_TOWEL.jpeg" alt="Pool Towel" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Pool Towel</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-        <button onclick="redirectToContact('Pool Towel')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">
-          Enquire Now
-        </button>
-      </div>
+    
 
     </div>
   </div>

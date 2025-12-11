@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Meghrup Linen and Décor</title>
-    <link rel="icon" type="image/png" href="images/favicon_2.jpg" />
+    <link rel="icon" type="image/png" href="images/Meghrup abstract.png" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   
@@ -13,59 +13,61 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Poppins', sans-serif;
+     
       background: linear-gradient(135deg, #fef9f4, #fceee3, #f7e2d7);
-      color: #333;
+      
+      color: #333 ;
     }
     a { text-decoration: none; color: inherit; }
+header.main-header {
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 
-    .top-bar {
-      background: linear-gradient(to right, #f9f5ef, #f4e9dd);
-      padding: 10px 20px;
-      font-size: 14px;
-      color: #5a524c;
-      overflow: hidden;
-      white-space: nowrap;
-    }
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
 
-    .top-bar .left {
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-    }
 
-    .top-bar .left > div {
-      display: inline-block;
-      padding-left: 100%;
-      animation: scroll-left 35s linear infinite;
-    }
-
-    @keyframes scroll-left {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
-
-    header.main-header {
-      background: linear-gradient(135deg, #fffefc, #fdf5ee, #f7e9dc);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-      padding: 12px 20px;
-      position: relative;
-      z-index: 1000;
-    }
 
     .main-header .container {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 9px 20px;
     }
 
-    .logo {
-      font-size: 26px;
-      font-weight: 700;
-      color: #a67c52;
-      text-transform: uppercase;
-      line-height: 1.2;
-      text-shadow: 1px 1px 0 #d1bfa6, 2px 2px 0 #c2a988;
-    }
+.logo img {
+  height: 70px;
+  width: 200px;
+  object-fit: contain;
+  transition: all 0.4s ease-in-out;
+  filter:
+    drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4))    /* Thicker black shadow */
+    drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)); /* Stronger white glow */
+  border-radius: 10px;
+  opacity: 0.85; /* Reduced opacity */
+}
+
+/* Glow on hover */
+.logo img:hover {
+  transform: scale(1.05);
+  filter:
+    drop-shadow(0 8px 16px rgba(0, 0, 0, 0.5))    /* Even thicker black shadow */
+    drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)); /* Stronger white glow */
+  opacity: 1; /* Full opacity on hover */
+}
+
+@media (max-width: 992px) {
+  .logo img {
+    height: 60px !important;
+    width: 190px !important;
+  }
+}
+
 
     .logo .sub {
       font-size: 16px;
@@ -82,7 +84,7 @@
       font-size: 24px;
       background: none;
       border: none;
-      color: #a67c52;
+      color: white;
       display: block;
     }
 
@@ -181,7 +183,7 @@
   font-weight: 600;
   padding: 0px 50px;
   font-size: 15px;
-  color: #5a524c;
+  color: white;
   align-items: center;
 }
 
@@ -234,32 +236,21 @@
         color: #a67c52;
       }
     }
-
-
-
+.logo.hide {
+  display: none !important;
+}
 
   </style>
-</head>
-<body>
-  <!-- Top Bar -->
-  <!-- <div class="top-bar">
-    <div class="left">
-   <div>
-  📞 <a href="tel:+919146428456">+91 9146428456</a> / <a href="tel:+919619293734">+91 9619293734</a>
-  &nbsp;&nbsp;📍  Pune-412308, Maharashtra, India
-</div>
 
-    </div>
-  </div> -->
 
-  <!-- Header -->
-<!-- Header -->
 <header class="main-header">
   <div class="container">
 <a href="index.html" style="text-decoration: none; color: inherit;">
-  <div class="logo">
-    Meghrup Linen<br><span class="sub">And Décor</span>
-  </div>
+<div class="logo" id="logo">
+
+  <img src="images/FINAL_CROP_LOGO.png" alt="Meghrup Linen and Décor" style="height: 70px;width: 200px;" />
+</div>
+
 </a>
 
 
@@ -292,10 +283,7 @@
             <a href="PILLOWS_&_CUSHIONS.html">Cotton Stripes 300 TC - 20x30</a>
             <a href="PILLOWS_&_CUSHIONS.html">Cotton Stripes 400 TC - 20x30</a>
             <strong style="padding:8px 20px;color:#a67c52;">Pillows & Cushions</strong>
-            <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 16x24</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 17x27</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 22x32</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Recron Cushion 16x16</a>
+
           </div>
         </li>
         <li>
@@ -354,7 +342,9 @@
   <!-- Sidebar for Mobile -->
 <div class="mobile-sidebar" id="mobileSidebar">
   <div class="close-btn" onclick="toggleSidebarMobile()">×</div>
-  <h3 style="color:#a67c52; margin-bottom: 20px;">Meghrup Menu</h3>
+
+
+ <img src="images/FINAL_CROP_LOGO.png" alt="Meghrup Logo" style="max-width: 140px; margin-bottom: 40px;">
   <ul>
     <li>
       <a href="Bed_linens.html" onclick="toggleDropdownMobile('drop1', event)">Bed Linens <i class="fa fa-chevron-down"></i></a>
@@ -378,10 +368,7 @@
         <a href="PILLOWS_&_CUSHIONS.html">Cotton Stripes 300 TC - 20x30</a>
         <a href="PILLOWS_&_CUSHIONS.html">Cotton Stripes 400 TC - 20x30</a>
         <strong style="color:#a67c52;">Pillows & Cushions</strong>
-        <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 16x24</a>
-        <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 17x27</a>
-        <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 22x32</a>
-        <a href="PILLOWS_&_CUSHIONS.html">Recron Cushion 16x16</a>
+       
       </div>
     </li>
 
@@ -434,51 +421,73 @@
 </div>
 
 
-  <script>
-    function toggleSidebarMobile() {
-      const sidebar = document.getElementById('mobileSidebar');
-      sidebar.classList.toggle('active');
+<script>
+  function toggleSidebarMobile() {
+    const sidebar = document.getElementById('mobileSidebar');
+    const logo = document.getElementById('logo');
+
+    sidebar.classList.toggle('active');
+
+    if (logo) {
+      logo.classList.toggle('hide');
     }
+  }
 
-    function toggleDropdownMobile(id, event) {
-      event.preventDefault();
-      const dropdown = document.getElementById(id);
-      const all = document.querySelectorAll('.dropdown-mobile');
-      all.forEach(el => {
-        if (el !== dropdown) el.classList.remove('open');
-      });
-      dropdown.classList.toggle('open');
+  function toggleDropdownMobile(id, event) {
+    event.preventDefault();
+    const dropdown = document.getElementById(id);
+    const all = document.querySelectorAll('.dropdown-mobile');
+    all.forEach(el => {
+      if (el !== dropdown) el.classList.remove('open');
+    });
+    dropdown.classList.toggle('open');
+  }
+
+  // CLOSE SIDEBAR WHEN CLICKING OUTSIDE
+  document.addEventListener('click', function (event) {
+    const sidebar = document.getElementById('mobileSidebar');
+    const toggleBtn = document.querySelector('.sidebar-toggle');
+    const isSidebarOpen = sidebar.classList.contains('active');
+
+    if (
+      isSidebarOpen &&
+      !sidebar.contains(event.target) &&
+      !toggleBtn.contains(event.target)
+    ) {
+      sidebar.classList.remove('active');
+      const logo = document.getElementById('logo');
+      if (logo) logo.classList.remove('hide');
     }
+  });
 
-    window.addEventListener("DOMContentLoaded", () => {
-      gsap.from(".top-bar", { y: -30, opacity: 0, duration: 1, ease: "power3.out" });
-      gsap.from(".main-header", { y: -60, opacity: 0, duration: 1.2, delay: 0.2, ease: "power3.out" });
-      gsap.from("nav.nav-menu li", {
-        y: -25, scale: 0.95, rotation: -2, opacity: 0,
-        duration: 1.1, delay: 0.5,
-        stagger: { each: 0.1 },
-        ease: "elastic.out(1, 0.5)"
+  // Animations using GSAP
+  window.addEventListener("DOMContentLoaded", () => {
+    gsap.from(".top-bar", { y: -30, opacity: 0, duration: 1, ease: "power3.out" });
+    gsap.from(".main-header", { y: -60, opacity: 0, duration: 1.2, delay: 0.2, ease: "power3.out" });
+    gsap.from("nav.nav-menu li", {
+      y: -25, scale: 0.95, rotation: -2, opacity: 0,
+      duration: 1.1, delay: 0.5,
+      stagger: { each: 0.1 },
+      ease: "elastic.out(1, 0.5)"
+    });
+
+    const dropdowns = document.querySelectorAll(".dropdown-content");
+    dropdowns.forEach(dropdown => {
+      const parent = dropdown.closest("li");
+      parent.addEventListener("mouseenter", () => {
+        gsap.killTweensOf(dropdown);
+        dropdown.style.display = "block";
+        gsap.fromTo(dropdown, { y: -10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" });
       });
-
-      const dropdowns = document.querySelectorAll(".dropdown-content");
-      dropdowns.forEach(dropdown => {
-        const parent = dropdown.closest("li");
-        parent.addEventListener("mouseenter", () => {
-          gsap.killTweensOf(dropdown);
-          dropdown.style.display = "block";
-          gsap.fromTo(dropdown, { y: -10, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" });
-        });
-        parent.addEventListener("mouseleave", () => {
-          gsap.to(dropdown, {
-            y: -10, opacity: 0, duration: 0.3, ease: "power2.in",
-            onComplete: () => dropdown.style.display = "none"
-          });
+      parent.addEventListener("mouseleave", () => {
+        gsap.to(dropdown, {
+          y: -10, opacity: 0, duration: 0.3, ease: "power2.in",
+          onComplete: () => dropdown.style.display = "none"
         });
       });
     });
-  </script>
-</body>
-</html>
+  });
+</script>
 
 
 
@@ -487,31 +496,6 @@
 
 
 
-
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MS Decor</title>
-  
-  <!-- Favicon -->
-  <link rel="icon" href="public/MS Decor Logo.png" />
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="./style.css" />
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-V/9RJ+7cK8Q7bFvlGDFEk9cIzRkZnO4I/n9ZqCHNmS9YEXom1kOGg5p27TuKlX3vqtYTDHVqEl9zF2slroZ+og==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-</head>
-
-<body>
 
 
 
@@ -561,7 +545,7 @@
 
     .slide-content {
       position: absolute;
-      top: 35%;
+      top: 55%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
@@ -708,6 +692,15 @@
     });
   </script>
 </section>
+
+
+
+
+
+
+
+
+
 <section style="font-family: 'Segoe UI', sans-serif; padding: 50px 20px; text-align: center; background: linear-gradient(135deg, #fef9f4, #fceee3, #f7e2d7);">
   <div style="background: linear-gradient(to right, #e6c8aa, #a67c52, #6e4a2d); padding: 0px 0; border-radius: 8px;">
     <h2 style="color: white; font-size: 2.2rem; margin: 0; letter-spacing: 1px;">SHOP BY CATEGORY</h2>
@@ -725,49 +718,49 @@
   <div class="underline"></div>
 </a>
 
-<a href="PILLOWS_&_CUSHIONS.html" class="category-card">
+<a href="PILLO_COVER.html" class="category-card">
   <img src="images/Pillow Cover.webp" alt="Pillow Cover">
   <div class="category-title">Pillow Cover</div>
   <div class="underline"></div>
 </a>
 
-<a href="PILLOWS_&_CUSHIONS.html" class="category-card">
+<a href="PILLO.HTML" class="category-card">
   <img src="images/Pillow Protector.webp" alt="Pillow">
   <div class="category-title">Pillow</div>
   <div class="underline"></div>
 </a>
 
-<a href="PILLOWS_&_CUSHIONS.html" class="category-card">
+<a href="COUSSION.html" class="category-card">
   <img src="images/Cushion.webp" alt="Cushion">
   <div class="category-title">Cushion</div>
   <div class="underline"></div>
 </a>
 
-<a href="DUETS_&_PROTECTORS.html" class="category-card">
+<a href="Duet&Comferter.html" class="category-card">
   <img src="images/Duvet.webp" alt="Duvet & Comforter">
   <div class="category-title">Duvet & Comforter</div>
   <div class="underline"></div>
 </a>
 
-<a href="DUETS_&_PROTECTORS.html" class="category-card">
+<a href="DUVET_COVER.html" class="category-card">
   <img src="images/Duvet Cover.webp" alt="Duvet Cover">
   <div class="category-title">Duvet Cover</div>
   <div class="underline"></div>
 </a>
 
-<a href="OTHERS.html" class="category-card">
+<a href="Matress_Cover.html" class="category-card">
   <img src="images/Mattress Protector.webp" alt="Mattress Protector">
   <div class="category-title">Mattress Protector</div>
   <div class="underline"></div>
 </a>
 
-<a href="OTHERS.html" class="category-card">
-  <img src="images/Pillow Protector.webp" alt="Pillow Protector">
+<a href="Pillow_protector.html" class="category-card">
+  <img src="images/Pillow Protector.webp" alt="Pillow Protector"> 
   <div class="category-title">Pillow Protector</div>
   <div class="underline"></div>
 </a>
 
-<a href="OTHERS.html" class="category-card">
+<a href="BED_RUNNER.html" class="category-card">
   <img src="images/Bed Runner.webp" alt="Bed Runner">
   <div class="category-title">Bed Runner</div>
   <div class="underline"></div>
@@ -846,47 +839,38 @@
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 53px; max-width: 1200px; margin: 0 auto;">
     
     <!-- Card Template -->
-  <a href="TOWELS_&_MATS.html" class="category-card">
+  <a href="BATH_TOWEL.html" class="category-card">
   <img src="images/Bath Towel.webp" alt="Bath Towel">
   <div class="category-title">Bath Towel</div>
   <div class="underline"></div>
 </a>
 
-<a href="TOWELS_&_MATS.html" class="category-card">
+<a href="HAND_TOWEL.html" class="category-card">
   <img src="images/Hand Towel.webp" alt="Hand Towel">
   <div class="category-title">Hand Towel</div>
   <div class="underline"></div>
 </a>
 
-<a href="TOWELS_&_MATS.html" class="category-card">
+<a href="FACE_TOWEL.html" class="category-card">
   <img src="images/Face Towel.webp" alt="Face Towel">
   <div class="category-title">Face Towel</div>
   <div class="underline"></div>
 </a>
 
-<a href="TOWELS_&_MATS.html" class="category-card">
+<a href="POOL_TOWEL.html" class="category-card">
   <img src="images/Pool Towel.webp" alt="Pool Towel">
   <div class="category-title">Pool Towel</div>
   <div class="underline"></div>
 </a>
 
-<a href="DUETS_&_PROTECTORS.html" class="category-card">
-  <img src="images/Shower Curtain.webp" alt="Duvet & Comforter">
-  <div class="category-title">Duvet & Comforter</div>
-  <div class="underline"></div>
-</a>
 
-<a href="DUETS_&_PROTECTORS.html" class="category-card">
-  <img src="images/Duvet Cover.webp" alt="Shower Curtain">
+
+<a href="SHOWER_CURTONS.html" class="category-card">
+  <img src="images/Shower Curtain (1).webp" alt="Shower Curtain">
   <div class="category-title">Shower Curtain</div>
   <div class="underline"></div>
 </a>
 
-<a href="OTHERS.html" class="category-card">
-  <img src="images/Mattress Protector.webp" alt="Mattress Protector">
-  <div class="category-title">Mattress Protector</div>
-  <div class="underline"></div>
-</a>
 
 <!-- 
     <div class="category-card">
@@ -1151,12 +1135,16 @@
 
   gsap.from("#about-us a", {
     opacity: 0,
-    y: 20,
+    y: 20, 
     delay: 1,
     duration: 1,
     ease: "power2.out"
   });
 </script>
+
+
+
+
 <section id="our-clients" style="padding: 60px 20px; background: linear-gradient(135deg, #fef9f4, #f4e5d6); font-family: 'Poppins', sans-serif; color: #3a2f2f; text-align: center;">
   <style>
     @keyframes scrollRight {

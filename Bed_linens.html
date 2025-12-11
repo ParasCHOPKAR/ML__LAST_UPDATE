@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Meghrup Linen and Décor</title>
-    <link rel="icon" type="image/png" href="images/favicon_2.jpg" />
+    <link rel="icon" type="image/png" href="images/Meghrup abstract.png"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -42,14 +42,14 @@
       0% { transform: translateX(0); }
       100% { transform: translateX(-100%); }
     }
+header.main-header {
+  background: linear-gradient(135deg, #fffefc, #fdf5ee, #f7e9dc);
+  padding: 12px 20px;
+  position: relative;
+  z-index: 1000;
+}
 
-    header.main-header {
-      background: linear-gradient(135deg, #fffefc, #fdf5ee, #f7e9dc);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.08);
-      padding: 12px 20px;
-      position: relative;
-      z-index: 1000;
-    }
+
 
     .main-header .container {
       display: flex;
@@ -57,21 +57,36 @@
       align-items: center;
     }
 
-    .logo {
-      font-size: 26px;
-      font-weight: 700;
-      color: #a67c52;
-      text-transform: uppercase;
-      line-height: 1.2;
-      text-shadow: 1px 1px 0 #d1bfa6, 2px 2px 0 #c2a988;
-    }
+.logo img {
+  height: 70px;
+  width: 200px;
+  object-fit: contain;
+  transition: all 0.4s ease-in-out;
+  filter:
+    drop-shadow(0 6px 12px rgba(0, 0, 0, 0.4))    /* Thicker black shadow */
+    drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)); /* Stronger white glow */
+  border-radius: 10px;
+  opacity: 0.85; /* Reduced opacity */
+}
 
-    .logo .sub {
-      font-size: 16px;
-      font-weight: 600;
-      color: #7d5a3c;
-      text-shadow: 1px 1px 0 #e0d1bc, 2px 2px 0 #d6c0a5;
-    }
+/* Glow on hover */
+.logo img:hover {
+  transform: scale(1.05);
+  filter:
+    drop-shadow(0 8px 16px rgba(0, 0, 0, 0.5))    /* Even thicker black shadow */
+    drop-shadow(0 0 20px rgba(255, 255, 255, 0.9)); /* Stronger white glow */
+  opacity: 1; /* Full opacity on hover */
+}
+
+@media (max-width: 992px) {
+  .logo img {
+  height: 60px !important;
+    width: 190px !important;
+  }
+}
+
+
+
 
     nav.nav-menu {
       display: none;
@@ -256,9 +271,10 @@
 <header class="main-header">
   <div class="container">
 <a href="index.html" style="text-decoration: none; color: inherit;">
-  <div class="logo">
-    Meghrup Linen<br><span class="sub">And Décor</span>
-  </div>
+<div class="logo">
+ <img src="images/FINAL_CROP_LOGO.png" alt="Meghrup Linen and Décor" style="height: 70px;width: 200px;" />
+</div>
+
 </a>
 
 
@@ -291,10 +307,7 @@
             <a href="PILLOWS_&_CUSHIONS.html">Cotton Stripes 300 TC - 20x30</a>
             <a href="PILLOWS_&_CUSHIONS.html">Cotton Stripes 400 TC - 20x30</a>
             <strong style="padding:8px 20px;color:#a67c52;">Pillows & Cushions</strong>
-            <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 16x24</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 17x27</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 22x32</a>
-            <a href="PILLOWS_&_CUSHIONS.html">Recron Cushion 16x16</a>
+
           </div>
         </li>
         <li>
@@ -353,7 +366,8 @@
   <!-- Sidebar for Mobile -->
 <div class="mobile-sidebar" id="mobileSidebar">
   <div class="close-btn" onclick="toggleSidebarMobile()">×</div>
-  <h3 style="color:#a67c52; margin-bottom: 20px;">Meghrup Menu</h3>
+
+ <img src="images/FINAL_CROP_LOGO.png" alt="Meghrup Logo" style="max-width: 140px; margin-bottom: 40px;">
   <ul>
     <li>
       <a href="Bed_linens.html" onclick="toggleDropdownMobile('drop1', event)">Bed Linens <i class="fa fa-chevron-down"></i></a>
@@ -377,10 +391,7 @@
         <a href="PILLOWS_&_CUSHIONS.html">Cotton Stripes 300 TC - 20x30</a>
         <a href="PILLOWS_&_CUSHIONS.html">Cotton Stripes 400 TC - 20x30</a>
         <strong style="color:#a67c52;">Pillows & Cushions</strong>
-        <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 16x24</a>
-        <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 17x27</a>
-        <a href="PILLOWS_&_CUSHIONS.html">Recron Pillow 22x32</a>
-        <a href="PILLOWS_&_CUSHIONS.html">Recron Cushion 16x16</a>
+       
       </div>
     </li>
 
@@ -495,8 +506,6 @@
 
 
 
-
-
 <!-- //////////////////////////////////////////////  ABOUT US PAGE START  //////////////////////////////////////// -->
  
 <!-- ////////////////////////////////////////////// ABOUT US PAGE START  //////////////////////////////////////// -->
@@ -513,254 +522,164 @@
       transform: perspective(500px) rotateX(2deg);
       display: inline-block;
     ">
-      Explore Our Bed Linens
+      Bedsheet – Sub Category
     </h2>
 
-    <!-- Striped & Plain Bedsheets -->
-    <h3 style="font-size: 24px; color: #704922; font-weight: 600; margin-bottom: 25px; text-align: center;">Striped & Plain Bedsheets</h3>
-    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-bottom: 50px;">
+    <div style="display:flex; flex-wrap:wrap; gap:30px; justify-content:center;">
 
-      <!-- Card 1 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/WS_210.jpeg" alt="Cotton Stripes 210 TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Cotton Stripes 210 TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹79.00 – ₹95.00</p> -->
-    <button 
-  onclick="redirectToContact('Cotton Stripes 210 TC')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
-
-
+      <!-- 1) Micro White Strips 210 TC -->
+      <div class="hover-card" style="background:#fff;border-radius:12px;width:250px;padding:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);transition:0.3s;">
+        <img src="images/WS_210.jpeg" alt="Micro White Strips 210 TC"
+        style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:15px;">
+        <h3 style="font-size:16px;color:#333;margin-bottom:8px;">Micro White Strips (210 TC)</h3>
+        <a href="Bed_linens_details_01.html" style="display:inline-block;padding:10px 20px;background:#a67c52;color:#fff;border-radius:6px;cursor:pointer;font-weight:600;text-decoration:none;">
+          View Details
+        </a>
       </div>
 
-      <!-- Card 2 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/WS_300.jpeg" alt="Cotton Stripes 300 TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Cotton Stripes 300 TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹99.00 – ₹120.00</p> -->
-        <button 
-  onclick="redirectToContact('Cotton Stripes 300 TC')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
-
+      <!-- 2) Cotton Stripes 210 TC -->
+      <div class="hover-card" style="background:#fff;border-radius:12px;width:250px;padding:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);transition:0.3s;">
+        <img src="images/WS_210.png" alt="Cotton Stripes 210 TC"
+        style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:15px;">
+        <h3 style="font-size:16px;color:#333;margin-bottom:8px;">Cotton Stripes (210 TC)</h3>
+        <a href="Bed_linens_details_02.html" style="display:inline-block;padding:10px 20px;background:#a67c52;color:#fff;border-radius:6px;cursor:pointer;font-weight:600;text-decoration:none;">
+          View Details
+        </a>
       </div>
 
-      <!-- Card 3 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/WS_400000.png" alt="Cotton Stripes 400 TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Cotton Stripes 400 TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-       <button 
-  onclick="redirectToContact('Cotton Stripes 400 TC')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
-
+      <!-- 3) Cotton Stripes 300 TC -->
+      <div class="hover-card" style="background:#fff;border-radius:12px;width:250px;padding:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);transition:0.3s;">
+        <img src="images/WS_300.jpeg" alt="Cotton Stripes 300 TC"
+        style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:15px;">
+        <h3 style="font-size:16px;color:#333;margin-bottom:8px;">Cotton Stripes (300 TC)</h3>
+        <a href="Bed_linens_details_03.html" style="display:inline-block;padding:10px 20px;background:#a67c52;color:#fff;border-radius:6px;cursor:pointer;font-weight:600;text-decoration:none;">
+          View Details
+        </a>
       </div>
 
-      <!-- Card 4 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/PC.jpeg" alt="Plain Cotton Bedsheet" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Plain Cotton Bedsheet</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹89.00 – ₹110.00</p> -->
-       <button 
-  onclick="redirectToContact('Plain Cotton Bedsheet')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
-
+      <!-- 4) Cotton Stripes 400 TC -->
+      <div class="hover-card" style="background:#fff;border-radius:12px;width:250px;padding:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);transition:0.3s;">
+        <img src="images/WS_400.jpeg" alt="Cotton Stripes 400 TC"
+        style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:15px;">
+        <h3 style="font-size:16px;color:#333;margin-bottom:8px;">Cotton Stripes (400 TC)</h3>
+        <a href="Bed_linens_details_04.html" style="display:inline-block;padding:10px 20px;background:#a67c52;color:#fff;border-radius:6px;cursor:pointer;font-weight:600;text-decoration:none;">
+          View Details
+        </a>
       </div>
 
-    </div>
-
-    <!-- Hover Effect Style -->
-    <style>
-      .hover-card:hover {
-        transform: translateY(-8px) scale(1.03);
-        box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25);
-      }
-      .hover-card button:hover {
-        background: #8b633e;
-      }
-    </style>
-
-    <!-- Include GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
-    <!-- Coloured Bedsheet -->
-    <h3 style="font-size: 24px; color: #704922; font-weight: 600; margin-bottom: 25px; text-align: center;">Coloured Bedsheet</h3>
-    <div id="color-bedsheets" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-bottom: 50px;">
-
-      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; transition: transform 0.3s ease; box-shadow: 0 6px 15px rgba(0,0,0,0.15);">
-        <img src="images/Steel Grey.jpeg" alt="Colour Stripes Bedsheet TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Colour Stripes Bedsheet TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-      <button 
-  onclick="redirectToContact('Colour Stripes Bedsheet TC')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
+      <!-- 5) Plain Cotton 210 -->
+      <div class="hover-card" style="background:#fff;border-radius:12px;width:250px;padding:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);transition:0.3s;">
+        <img src="images/PC.jpeg" alt="Plain Cotton 210"
+        style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:15px;">
+        <h3 style="font-size:16px;color:#333;margin-bottom:8px;">Plain Cotton (210 TC)</h3>
+        <a href="Bed_linens_details_05.html" style="display:inline-block;padding:10px 20px;background:#a67c52;color:#fff;border-radius:6px;cursor:pointer;font-weight:600;text-decoration:none;">
+          View Details
+        </a>
       </div>
 
-      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; transition: transform 0.3s ease; box-shadow: 0 6px 15px rgba(0,0,0,0.15);">
-        <img src="images/Crimson Red.jpeg" alt="Colour Stripes Bedsheet TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Colour Stripes Bedsheet TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-        <button 
-  onclick="redirectToContact('Colour Stripes Bedsheet TC')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
+      <!-- 6) Plain Cotton 300 -->
+      <div class="hover-card" style="background:#fff;border-radius:12px;width:250px;padding:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);transition:0.3s;">
+        <img src="images/plane_bed_shit_01.jpg" alt="Plain Cotton 300"
+        style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:15px;">
+        <h3 style="font-size:16px;color:#333;margin-bottom:8px;">Plain Cotton (300 TC)</h3>
+        <a href="Bed_linens_details_06.html" style="display:inline-block;padding:10px 20px;background:#a67c52;color:#fff;border-radius:6px;cursor:pointer;font-weight:600;text-decoration:none;">
+          View Details
+        </a>
       </div>
 
-      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; transition: transform 0.3s ease; box-shadow: 0 6px 15px rgba(0,0,0,0.15);">
-        <img src="images/Silver.jpeg" alt="Colour Stripes Bedsheet TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Colour Stripes Bedsheet TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-         <button 
-  onclick="redirectToContact('Colour Stripes Bedsheet TC')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
+      <!-- 7) Plain Cotton 400 -->
+      <div class="hover-card" style="background:#fff;border-radius:12px;width:250px;padding:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);transition:0.3s;">
+        <img src="images/plane_bed_shit_02.jpg" alt="Plain Cotton 400"
+        style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:15px;">
+        <h3 style="font-size:16px;color:#333;margin-bottom:8px;">Plain Cotton (400 TC)</h3>
+        <a href="Bed_linens_details_07.html" style="display:inline-block;padding:10px 20px;background:#a67c52;color:#fff;border-radius:6px;cursor:pointer;font-weight:600;text-decoration:none;">
+          View Details
+        </a>
       </div>
 
-      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; transition: transform 0.3s ease; box-shadow: 0 6px 15px rgba(0,0,0,0.15);">
-        <img src="images/Dark Coffee.jpeg" alt="Colour Stripes Bedsheet TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Colour Stripes Bedsheet TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-        <button 
-  onclick="redirectToContact('Colour Stripes Bedsheet TC')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
+      <!-- 8) Colour Stripes -->
+      <div class="hover-card" style="background:#fff;border-radius:12px;width:250px;padding:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);transition:0.3s;">
+        <img src="images/plane_bed_shit_03.jpg" alt="Colour Stripes Bedsheet"
+        style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:15px;">
+        <h3 style="font-size:16px;color:#333;margin-bottom:8px;">Colour Stripes Bedsheet</h3>
+        <a href="Bed_linens_details_08.html" style="display:inline-block;padding:10px 20px;background:#a67c52;color:#fff;border-radius:6px;cursor:pointer;font-weight:600;text-decoration:none;">
+          View Details
+        </a>
       </div>
 
-      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; transition: transform 0.3s ease; box-shadow: 0 6px 15px rgba(0,0,0,0.15);">
-        <img src="images/Navy Blue.jpeg" alt="Colour Stripes Bedsheet TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Colour Stripes Bedsheet TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-        <button 
-  onclick="redirectToContact('Colour Stripes Bedsheet TC')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
+      <!-- 9) Printed Double 90x108 -->
+      <div class="hover-card" style="background:#fff;border-radius:12px;width:250px;padding:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);transition:0.3s;">
+        <img src="images/plane_bed_shit_04.jpg" alt="Printed Double 90x108"
+        style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:15px;">
+        <h3 style="font-size:16px;color:#333;margin-bottom:8px;">Printed Double (90×108)</h3>
+        <a href="Bed_linens_details_09.html" style="display:inline-block;padding:10px 20px;background:#a67c52;color:#fff;border-radius:6px;cursor:pointer;font-weight:600;text-decoration:none;">
+          View Details
+        </a>
       </div>
 
-      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; transition: transform 0.3s ease; box-shadow: 0 6px 15px rgba(0,0,0,0.15);">
-        <img src="images/Sand Beige.jpeg" alt="Colour Stripes Bedsheet TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Colour Stripes Bedsheet TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-         <button 
-  onclick="redirectToContact('Colour Stripes Bedsheet TC')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
+      <!-- 10) Printed Double 108x108 -->
+      <div class="hover-card" style="background:#fff;border-radius:12px;width:250px;padding:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);transition:0.3s;">
+        <img src="images/plane_bed_shit_05.jpg" alt="Printed Double 108x108"
+        style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:15px;">
+        <h3 style="font-size:16px;color:#333;margin-bottom:8px;">Printed Double (108×108)</h3>
+        <a href="Bed_linens_details_10.html" style="display:inline-block;padding:10px 20px;background:#a67c52;color:#fff;border-radius:6px;cursor:pointer;font-weight:600;text-decoration:none;">
+          View Details
+        </a>
       </div>
 
-      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; transition: transform 0.3s ease; box-shadow: 0 6px 15px rgba(0,0,0,0.15);">
-        <img src="images/Taupe.jpeg" alt="Colour Stripes Bedsheet TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Colour Stripes Bedsheet TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-        <button 
-  onclick="redirectToContact('Colour Stripes Bedsheet TC')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
-      </div>
-
-      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; transition: transform 0.3s ease; box-shadow: 0 6px 15px rgba(0,0,0,0.15);">
-        <img src="images/Black.jpeg" alt="Colour Stripes Bedsheet TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Colour Stripes Bedsheet TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-         <button 
-  onclick="redirectToContact('Colour Stripes Bedsheet TC')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
-      </div>
-
-      <div class="card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; transition: transform 0.3s ease; box-shadow: 0 6px 15px rgba(0,0,0,0.15);">
-        <img src="images/Brown.jpeg" alt="Colour Stripes Bedsheet TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Colour Stripes Bedsheet TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-       <button 
-  onclick="redirectToContact('Colour Stripes Bedsheet TC')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
+      <!-- 11) Printed Single 68x108 -->
+      <div class="hover-card" style="background:#fff;border-radius:12px;width:250px;padding:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);transition:0.3s;">
+        <img src="images/plane_bed_shit_01.jpg" alt="Printed Single 68x108"
+        style="width:100%;height:180px;object-fit:cover;border-radius:8px;margin-bottom:15px;">
+        <h3 style="font-size:16px;color:#333;margin-bottom:8px;">Printed Single (68×108)</h3>
+        <a href="Bed_linens_details_11.html" style="display:inline-block;padding:10px 20px;background:#a67c52;color:#fff;border-radius:6px;cursor:pointer;font-weight:600;text-decoration:none;">
+          View Details
+        </a>
       </div>
 
     </div>
-
-    <!-- GSAP Hover Animation Script -->
-    <script>
-      document.querySelectorAll("#color-bedsheets .card").forEach(card => {
-        card.addEventListener("mouseenter", () => {
-          gsap.to(card, { scale: 1.05, y: -8, boxShadow: "0 15px 35px rgba(0,0,0,0.3)", duration: 0.3 });
-        });
-        card.addEventListener("mouseleave", () => {
-          gsap.to(card, { scale: 1, y: 0, boxShadow: "0 6px 15px rgba(0,0,0,0.15)", duration: 0.3 });
-        });
-      });
-    </script>
-
-    <!-- Printed Bedsheets -->
-    <h3 style="font-size: 24px; color: #704922; font-weight: 600; margin-bottom: 25px; text-align:center;">Printed Bedsheets</h3>
-    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
-      <div class="gsap-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
-        <img src="images/Printed_BS.webp" alt="Printed Bedsheet (90x108)" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Printed Bedsheet (90x108)</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹149.00 – ₹170.00</p> -->
-        <button 
-  onclick="redirectToContact('Printed Bedsheet (90x108)')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
-      </div>
-      <div class="gsap-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
-        <img src="images/Pinted_BS.webp" alt="Printed Bedsheet (68x108)" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Printed Bedsheet (68x108)</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹119.00 – ₹130.00</p> -->
-        <button 
-  onclick="redirectToContact('Printed Bedsheet (68x108)')" 
-  style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;"
->
-  Enquire Now
-</button>
-      </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script>
-      document.querySelectorAll('.gsap-card').forEach((card) => {
-        card.addEventListener('mouseenter', () => {
-          gsap.to(card, { scale: 1.05, rotateX: 5, rotateY: 5, boxShadow: '0 12px 24px rgba(0,0,0,0.3)', duration: 0.3 });
-        });
-        card.addEventListener('mouseleave', () => {
-          gsap.to(card, { scale: 1, rotateX: 0, rotateY: 0, boxShadow: '0 8px 20px rgba(0,0,0,0.2)', duration: 0.3 });
-        });
-      });
-    </script>
 
   </div>
 </section>
 
+<script>
+  function viewDetails(product) {
+    window.location.href = "product-detail.html?product=" + encodeURIComponent(product);
+  }
+</script>
+
+<style>
+  .hover-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 16px 30px rgba(0,0,0,0.25);
+    transition: 0.3s;
+  }
+</style>
+
+<script>
+  function viewDetails(product) {
+    window.location.href = "product-detail.html?product=" + encodeURIComponent(product);
+  }
+</script>
+
+<style>
+  .hover-card:hover, .card:hover, .gsap-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 16px 30px rgba(0,0,0,0.25);
+    transition: 0.3s;
+  }
+</style>
 
 
 
