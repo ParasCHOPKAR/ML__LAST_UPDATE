@@ -492,128 +492,106 @@ header.main-header {
 
 
 
+
 <!-- //////////////////////////////////////////////  ABOUT US PAGE START  //////////////////////////////////////// -->
  
 <!-- ////////////////////////////////////////////// ABOUT US PAGE START  //////////////////////////////////////// -->
+  <!-- PRODUCT SECTION -->
+<section style="padding:70px 20px; font-family:'Poppins',sans-serif;">
+  <div style="
+    max-width:1150px; 
+    margin:auto; 
+    display:flex; 
+    flex-wrap:wrap; 
+    gap:50px; 
+    justify-content:center; 
+    align-items:flex-start;
+  ">
 
+    <!-- LEFT SIDE MAIN IMAGE -->
+    <div style="
+      flex:1; 
+      min-width:320px; 
+      max-width:480px; 
+      background:#fff; 
+      border-radius:18px; 
+      padding:25px; 
+      box-shadow:0 6px 22px rgba(0,0,0,0.12);
+    ">
+      <img src="images/BATH_TOWEL_07.webp" 
+           alt="Pure Cotton All Color Towels" 
+           style="width:100%; border-radius:14px;">
 
-<!-- PILLOWS & CUSHIONS SECTION -->
-<section style="padding: 60px 20px; background: #fdf7f1; font-family: 'Poppins', sans-serif;">
-  <div style="max-width: 1200px; margin: auto; text-align: center;">
-
-    <h2 style="
-      font-size: 36px; 
-      color: #a67c52; 
-      font-weight: 700; 
-      margin-bottom: 40px; 
-      text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-      transform: perspective(500px) rotateX(2deg);
-      display: inline-block;">
-      Explore Our PILLOWS & CUSHIONS
-    </h2>
-
-    <h3 style="font-size: 24px; color: #704922; font-weight: 600; margin-bottom: 25px; text-align: center;">Pillow Covers</h3>
-    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-bottom: 50px;">
-      
-  
-      <!-- Card 1 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/pillow_400.jpeg" alt="Cotton Stripes 210 TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Cotton Stripes 210 TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹79.00 – ₹95.00</p> -->
-        <button onclick="redirectToContact('Cotton Stripes 210 TC')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">Enquire Now</button>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/Pillo_cover_300.jpeg" alt="Cotton Stripes 300 TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Cotton Stripes 300 TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹99.00 – ₹120.00</p> -->
-        <button onclick="redirectToContact('Cotton Stripes 300 TC')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">Enquire Now</button>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/Pillo_cover_plain.jpeg" alt="Cotton Stripes 400 TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Cotton Stripes 400 TC</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-        <button onclick="redirectToContact('Cotton Stripes 400 TC')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">Enquire Now</button>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/PILLO_COVER_COLORED.jpeg" alt="Colored Cotton Cover" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Colored Cotton Cover</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹89.00 – ₹110.00</p> -->
-        <button onclick="redirectToContact('Colored Cotton Pillow Cover')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">Enquire Now</button>
+      <!-- COLOR OPTIONS THUMBNAILS -->
+      <div style="display:flex; gap:12px; margin-top:18px; justify-content:center; flex-wrap:wrap;">
+        <img src="images/BATH_01.jpeg" style="width:70px; height:70px; border-radius:10px; object-fit:cover;">
+        <img src="images/BATH_02.jpeg" style="width:70px; height:70px; border-radius:10px; object-fit:cover;">
+        <img src="images/BATH_03.jpeg" style="width:70px; height:70px; border-radius:10px; object-fit:cover;">
+        <img src="images/BATH_04.jpeg" style="width:70px; height:70px; border-radius:10px; object-fit:cover;">
+        <img src="images/BATH_05.jpeg" style="width:70px; height:70px; border-radius:10px; object-fit:cover;">
       </div>
     </div>
 
-    <h3 style="font-size: 24px; color: #704922; font-weight: 600; margin-bottom: 25px; text-align: center;"></h3>
-    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-bottom: 50px;">
-      
-      <!-- Card 1 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/PILLO_COVER_COLORED_01.jpeg" alt="Colored Cotton Cover" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Colored Cotton Cover</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹79.00 – ₹95.00</p> -->
-        <button onclick="redirectToContact('Colored CottonN Non-Framed Pillow Cover')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">Enquire Now</button>
-      </div>
+    <!-- RIGHT SIDE CONTENT -->
+    <div style="flex:1; min-width:320px;">
 
-      <!-- Card 2 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/PILLO_COVER_COLORED_02.jpeg" alt="Colored Cotton Cover" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Colored Cotton Cover</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹99.00 – ₹120.00</p> -->
-        <button onclick="redirectToContact('Colored CottonN Non-Framed Pillow Cover')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">Enquire Now</button>
-      </div>
+      <h2 style="
+        font-size:36px; 
+        font-weight:700; 
+        color:#7a522f; 
+        margin-bottom:15px;">
+      All Colors Towel
+      </h2>
 
-      <!-- Card 3 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/PILLO_COVER_COLORED_03.jpeg" alt="Colored Cotton Cover" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Colored Cotton Cover</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹69.00 – ₹80.00</p> -->
-        <button onclick="redirectToContact('Colored CottonN Non-Framed Pillow Cover')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">Enquire Now</button>
-      </div>
+      <p style="
+        font-size:16px; 
+        color:#6c6054; 
+        line-height:1.7; 
+        margin-bottom:25px;">
+        Premium-grade pure cotton towels available in beautiful, rich colors.
+        Soft, super absorbent, long-lasting, and ideal for everyday luxury comfort.
+      </p>
 
-      <!-- Card 4 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/PILLO_COVER_COLORED_04.jpeg" alt="Colored Cotton Cover" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Colored Cotton Cover</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹89.00 – ₹110.00</p> -->
-        <button onclick="redirectToContact('Colored CottonN Non-Framed Pillow Cover')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">Enquire Now</button>
-      </div>
-    </div>
-  
-    <h3 style="font-size: 24px; color: #704922; font-weight: 600; margin-bottom: 25px; text-align: center;">Pillows & Cushions</h3>
-    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-bottom: 50px;">
-      <!-- Card 1 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/pillo_pillo.jpeg" alt="Cotton Stripes 210 TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Cotton Stripes 210 TC Pillow</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹79.00 – ₹95.00</p> -->
-        <button onclick="redirectToContact('Cotton Stripes 210 TC Pillow')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">Enquire Now</button>
-      </div>
+      <h4 style="font-size:20px; color:#7a522f; margin-bottom:10px;">Available Size</h4>
+      <p style="font-size:16px; color:#6c6054; margin-bottom:25px;">30 × 60 inches</p>
 
-      <!-- Card 2 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/pillo_pillo_01.webp" alt="Cotton Stripes 300 TC" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Cotton Stripes 300 TC Pillow</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹99.00 – ₹120.00</p> -->
-        <button onclick="redirectToContact('Cotton Stripes 300 TC Pillow')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">Enquire Now</button>
-      </div>
->
+      <h4 style="font-size:20px; color:#7a522f; margin-bottom:10px;">Available Colors</h4>
+      <p style="font-size:16px; color:#6c6054; margin-bottom:25px;">
+        Red, Blue, Grey, Green, Yellow, Black, White, Peach, Maroon & More
+      </p>
 
-        <!-- Card 4 -->
-      <div class="hover-card" style="background: #fff; border-radius: 12px; width: 250px; padding: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); transition: transform 0.3s ease, box-shadow 0.3s ease;">
-        <img src="images/Cushion.jpeg" alt="Cushion" style="width: 100%; height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
-        <h3 style="font-size: 16px; color: #333; margin-bottom: 8px;">Cushion</h3>
-        <!-- <p style="color: #000; font-weight: 600;">₹89.00 – ₹110.00</p> -->
-        <button onclick="redirectToContact('Cushion')" style="padding: 10px 20px; background: #a67c52; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.3s ease; margin-top: 10px;">Enquire Now</button>
-      </div>
+      <h4 style="font-size:20px; color:#7a522f; margin-bottom:10px;">Key Features</h4>
+      <ul style="
+        list-style:disc; 
+        padding-left:20px; 
+        line-height:1.8; 
+        color:#6c6054; 
+        font-size:16px; 
+        margin-bottom:35px;">
+        <li>100% pure cotton – premium softness</li>
+        <li>Highly absorbent & quick drying</li>
+        <li>Skin-friendly & long-lasting fabric</li>
+        <li>Available in a wide variety of elegant colors</li>
+      </ul>
+
+      <a href="contact.html?product=Pure%20Cotton%20Bath%20Towel%2030x60%20All%20Colors"
+      style="
+        display:inline-block; 
+        background:#b07a45; 
+        color:#fff; 
+        padding:14px 32px; 
+        border-radius:8px; 
+        font-size:17px; 
+        font-weight:600; 
+        text-decoration:none;">
+        Enquire Now
+      </a>
+
     </div>
   </div>
 </section>
+
+
 
 
 
@@ -665,7 +643,6 @@ header.main-header {
 
 <!-- Include GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
 
 
 <!-- Footer Section -->
@@ -736,7 +713,7 @@ header.main-header {
     </li>
     <li>
       <i class="fa-solid fa-location-dot" style="margin-right: 8px;"></i>
-        <span style="color: whitesmoke;">
+ <span style="color: whitesmoke;">
     Ganesh Nagar, Saswad Road,<br>
     Near Railway Flyover Bridge,<br>
     Fursungi, Pune 412308
@@ -775,12 +752,9 @@ header.main-header {
     window.location.href = `${contactPageURL}?product=${encodedProduct}`;
   }
 </script>
+
 </body>
 </html>
-
-
-
-
 
 
 
